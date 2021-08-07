@@ -43,32 +43,31 @@
         <% name = params['name'] %>
         <% mail = params['mail'] %>
         <% tel = params['tel'] %>
-        <% content = params['content'] %>        
-
-        <table width="300">
-            <th>送信内容</th>
-            <tbody>
-                <tr>
-                    <td>会社名</td>
-                    <td><%= company %></td>
-                </tr>
-                <tr>
-                    <td>氏名</td>
-                    <td><%= name %></td>
-                </tr>
-                <tr>
-                    <td>メール</td>
-                    <td><%= mail %></td>
-                </tr>
-                <tr>
-                    <td>電話番号</td>
-                    <td><%= tel %></td>
-                </tr>
-                <tr>
-                    <td>内容</td>
-                    <td style="white-space:pre-line"><%= content %></td>
-                </tr>
-            </tbody>
+        <% content = params['content'] %>
+        
+        <p>送信内容</p>
+        
+        <table>
+            <tr>
+                <td style="width:300px;">会社名</td>
+                <td><%= company %></td>
+            </tr>
+            <tr>
+                <td style="width:300px;">氏名</td>
+                <td><%= name %></td>
+            </tr>
+            <tr>
+                <td style="width:300px;">メール</td>
+                <td><%= mail %></td>
+            </tr>
+            <tr>
+                <td style="width:300px;">電話番号</td>
+                <td><%= tel %></td>
+            </tr>
+            <tr>
+                <td style="width:300px;">内容</td>
+                <td style="white-space:pre-line"><%= content %></td>
+            </tr>
         </table>
         <div class="text-center mb-4">
             <!-- 「戻る」ボタンを緑色にする設定を追加 -->
